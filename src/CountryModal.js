@@ -16,8 +16,8 @@ const CountryModal = ({country, closeModal}) => {
         <h2>Capital: {country.capital}</h2>
         <p>Spoken Languages: </p>
         <ul>
-          {country.languages.map((language) => (
-            <li>{language.name}</li>
+          {country.languages.map((language, idx) => (
+            <li key={idx}>{language.name}</li>
           ))}
         </ul>
       </div>
