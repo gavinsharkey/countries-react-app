@@ -3,6 +3,7 @@
 }
 
 body {
+  margin: 0px;
   font-family: "Lato", sans-serif;
 }
 
@@ -21,9 +22,13 @@ header {
   align-items: center;
 }
 
+main {
+  background-color: #eee;
+}
+
 .countries-container {
-  margin-top: 60px;
-  padding: 0px 50px;
+  margin-top: 50px;
+  padding: 20px 50px;
 }
 
 .countries {
