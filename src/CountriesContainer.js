@@ -48,18 +48,20 @@ const CountriesContainer = () => {
 
   return (
     <>
-      <div className="countries-container">
-        <CountriesRegionFilter
-          region={region}
-          setRegion={setRegion}
-          query={query}
-          setQuery={setQuery}
-        />
-        <Countries
-          handleCountrySelect={handleCountrySelect}
-          countries={renderCountries()}
-        />
-      </div>
+      <main>
+        <div className="countries-container">
+          <CountriesRegionFilter
+            region={region}
+            setRegion={setRegion}
+            query={query}
+            setQuery={setQuery}
+          />
+          <Countries
+            handleCountrySelect={handleCountrySelect}
+            countries={renderCountries()}
+          />
+        </div>
+      </main>
       {showModal ? (
         <CountryModal closeModal={closeModal} country={currentCountry} />
       ) : null}
